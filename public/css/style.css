@@ -207,6 +207,12 @@ hr {
   font-size: 1.75rem;
   line-height: 2em; }
 
+.slider-for img {
+  -o-object-fit: cover;
+  -webkit-object-fit: cover;
+  object-fit: cover;
+  width: 100%; }
+
 .slider-for *, .slider-nav * {
   margin: 0 auto; }
 
@@ -239,8 +245,11 @@ footer {
   color: #f5f5f5; }
   .footer-list address {
     text-shadow: 1px 1px 0 black; }
-  .footer-list i {
+  .footer-list span {
     margin-bottom: .5em; }
+
+.copyright {
+  color: #a5a5a5; }
 
 .social-icons .fa {
   font-size: 1.8em; }

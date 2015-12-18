@@ -93,9 +93,9 @@ $titleColor: #FFC107;
 -------------------------------------------------- */
 
 body {
-  color: #5a5a5a;
+  color: #000;
   background-color: #ededed;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
 }
 
@@ -210,6 +210,7 @@ hr {
 -------------------------------------------------- */
 
 #price {
+  font-family: 'Lato', sans-serif;
   .icon {
     font-size: 2.5em;
     color: #5A5A5A;
@@ -217,7 +218,7 @@ hr {
   }
   .pricing {
     &__feature-list {
-      color: #5A5A5A;
+      color: #000;
       font-size: 1.25em;
       list-style: none;
       margin: 0;
@@ -306,6 +307,11 @@ hr {
     border: none !important;
     opacity: 1 !important;
   }
+}
+
+#description, #about {
+  font-size: 1.75rem;
+  line-height: 2em;
 }
 
 .divider {

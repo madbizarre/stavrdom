@@ -140,6 +140,53 @@ hr {
   background-color: #fefefe;
 }
 
+/* NAV
+-------------------------------------------------- */
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  & > .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .navbar {
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding-right: 15px;
+    padding-left: 15px;
+    border: none;
+    @include box-shadow(0 0 3px #000);
+    a {
+      color: #000;
+    }
+    .active > a {
+      background-color: #95A5A6;
+    }
+  }
+  .navbar-toggle {
+    border: none;
+    padding: 0;
+    &:focus {
+      background-color: transparent;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .navbar-wrapper {
+    .container {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .navbar {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
 /* INTRO
 -------------------------------------------------- */
 

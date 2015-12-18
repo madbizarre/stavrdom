@@ -221,8 +221,7 @@ hr {
       color: #000;
       font-size: 1.25em;
       list-style: none;
-      margin: 0;
-      padding: .25em 0 2.5em;
+      margin: 0 auto;
       text-align: left;
     }
     &__title {
@@ -312,6 +311,12 @@ hr {
 #description, #about {
   font-size: 1.75rem;
   line-height: 2em;
+}
+
+.slider-for, .slider-nav {
+  * {
+    margin: 0 auto;
+  }
 }
 
 .divider {
@@ -462,5 +467,10 @@ footer {
 -------------------------------------------------- */
 
 @media (max-width: 767px) {
-
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
 }

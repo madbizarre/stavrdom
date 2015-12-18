@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <% var title = "Ставръ Недвижимость" %>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+          integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header class="intro text-center white" id="intro" role="presentation">
+    <div class="container">
+        <h1 class="text-uppercase col-xs-12"><%= title %></h1>
+        <button class="btn btn-default-lg" role="button">Свяжитесь с нами!</button>
+    </div>
+</header>
+
+<main role="main">
+
+    <section class="white" id="price">
+        <div class="container text-center">
+            <h1 class="text-uppercase ">Цена и характеристика</h1>
+            <hr class="subtitle-divider"/>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="icon"><i class="fa fa-home"></i></div>
+
+                    <div class="pricing__price">
+                        <span class="pricing__anim">
+								23 000<span class="pricing__currency"><i class="fa fa-rub fa-1"></i></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <ul class="pricing__feature-list">
+                        <li>
+                            <ul class="list-inline">
+                                <li>Номер объекта</li>
+                                <li>9158</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-inline">
+                                <li>Район</li>
+                                <li>Ломоносовский</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-inline">
+                                <li>Размер участка, соток</li>
+                                <li>10</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-inline">
+                                <li>Общая площадь, м&#178;</li>
+                                <li>70</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <ul class="pricing__feature-list">
+                        <li>
+                            <ul class="list-inline">
+                                <li>Электричество</li>
+                                <li>есть</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-inline">
+                                <li>Водоснабжение</li>
+                                <li>есть</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-inline">
+                                <li>Газ</li>
+                                <li>есть</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-inline">
+                                <li>Водоем</li>
+                                <li>есть</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="2">
+        <h1 class="text-uppercase text-center">Фото</h1>
+        <hr class="subtitle-divider"/>
+        <h2>Здесь будут фото</h2>
+    </section>
+
+    <section class="white" id="3">
+        <div class="container text-center">
+            <h1 class="text-uppercase text-center">Описание</h1>
+            <hr class="subtitle-divider"/>
+            <p>
+                Снт "Балтика" д.Ракопежи <br/>
+                Великолепный, уютный дом из бруса, на блочном фундаменте, на участке 10 соток. Участок находится на
+                тупиковой улице.<br/>
+                Спокойное место идеально подходит для отдыха и восстановления жизненных сил. Поблизости находится
+                отличное чистое озеро!<br/>
+                На участке вода (летний водопровод), электричество (15 квт), газ(балон), парник (помидоры ,огруцы)<br/>
+                Также на участке есть баня с просторной комнатой отдыха, дровник, сарай, гараж.<br/>
+                Состояние объекта отличное - приехал и живи наслаждайся!<br/>
+            </p>
+        </div>
+    </section>
+
+    <section class="container" id="4">
+
+        <h1 class="text-uppercase text-center">Как добраться</h1>
+        <hr class="subtitle-divider"/>
+        <h2>Здесь описание как добраться</h2>
+        <section class="map gray" id="map-section">
+            <div class="col-xs-12" style="height: 100%">
+                <div id="map2" style="width: 100%; height: 100%;"></div>
+            </div>
+        </section>
+    </section>
+
+    <section class="white" id="5">
+        <div class="container">
+            <h1 class="text-uppercase text-center">О компании</h1>
+            <hr class="subtitle-divider"/>
+
+            <p>Наше агентство загородной недвижимости производит сделки с объектами недвижимости любой ценовой
+                категории, в диапазоне от 200 тысяч рублей до 100 миллионов рублей. При этом, Компания
+                «Ставръ-недвижимость» успешно работает не только с популярными и известными направлениями
+                Санкт-Петербурга и ЛО, но и с перспективными, находящимися в состоянии застройки.<br/><br/>
+                Новейшие методики исследования рынка, эффективные технологии рекламы, которые мы применяем, позволяют
+                максимально быстро осуществить как продажу дачного участка с домом, расположенного в отдаленном районе
+                ЛО, так и реализацию элитного коттеджа с прилегающей территорией по достойной цене.</p>
+
+            <p>Штат нашей компании — это энергичные специалисты, имеющие опыт в области купли/продажи загородной
+                недвижимости и знающие все нюансы сегодняшнего рынка. В кратчайшие сроки мы осуществим:</p>
+            <ul>
+                <li>Срочный выкуп недвижимости. Вы можете продать дом буквально «сегодня». При этом наша задача состоит
+                    в том, чтобы срочный выкуп загородной недвижимости был произведен на максимально выгодных для
+                    Клиента условиях.
+                </li>
+                <li>Консультация и покупка земельного участка. В процессе отбора объектов мы учитываем все требования
+                    Клиента, начиная от планируемого бюджета и заканчивая месторасположением участка, его площадью,
+                    конфигурацией и т.д.
+                </li>
+                <li>Оказание юридической помощи в процессе оформления сделок купле-продаже земельных участков и
+                    загородных домов, а также всего, что связано с:
+                    <ul>
+                        <li>приватизацией земельных участков;</li>
+                        <li>получением разрешений на строительство дома;</li>
+                        <li>оформлением земельных участков в собственность;</li>
+                        <li>регистрацией дачных домов;</li>
+                        <li>и т. д.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="map gray" id="map-section">
+        <div id="map" style="width: 100%; height: 100%;"></div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <ul class="list-inline text-center footer-list">
+            <li class="col-xs-6 col-sm-3">
+                <span class="fa fa-phone fa-4x"></span>
+                <address>
+                    <p><strong>Телефон:</strong><br/>
+                        +7 (812) 947-23-60
+                    </p>
+                </address>
+            </li>
+            <li class="col-xs-6 col-sm-3">
+                <span class="fa fa-envelope fa-4x"></span>
+                <address>
+                    <p><strong>Почта:</strong><br/>
+                        example@gmail.com
+                    </p>
+                </address>
+            </li>
+            <li class="col-xs-6 col-sm-3">
+                <span class="fa fa-map-marker fa-4x"></span>
+                <address>
+                    <p><strong>Наш адрес:</strong><br/>
+                        Пр. Просвещения 15, оф 148 <br/>
+                        Санкт-Петербург, Россия
+                    </p>
+                </address>
+            </li>
+            <li class="col-xs-6 col-sm-3">
+                <ul class="social-icons icon-circle icon-zoom list-inline">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a> </li>
+                    <li><a href="#"><i class="fa fa-vk"></i></a> </li>
+                    <li><a href="#"><i class="fa fa-odnoklassniki"></i></a> </li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a> </li>
+                </ul>
+            </li>
+        </ul>
+        <p class="col-xs-12">© <%= new Date().getFullYear() %> <%= title %></p>
+    </div>
+</footer>
+
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModal">
+    <div class="modal-dialog">
+        <div class="modal-content contact">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center contact-title">Оставьте заявку</h4>
+            </div>
+            <div class="modal-body text-center">
+                <form id="contact" action="" method="post">
+                    <fieldset>
+                        <label for="inputName"></label>
+                        <input type="text" id="inputName" placeholder="Имя*" tabindex="1" autofocus required/>
+                    </fieldset>
+                    <fieldset>
+                        <label for="inputEmail"></label>
+                        <input type="email" id="inputEmail" placeholder="Email" tabindex="2"/>
+                    </fieldset>
+                    <fieldset>
+                        <label for="inputTel"></label>
+                        <input type="tel" id="inputTel" placeholder="Телефон*" tabindex="4"
+                               pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required/>
+                    </fieldset>
+                    <fieldset>
+                        <label for="inputComment"></label>
+                        <textarea id="inputComment" placeholder="Сообщение*" tabindex="5" required></textarea>
+                    </fieldset>
+                    <button type="submit" id="inputSubmit" data-loading-text="Отправляется"
+                            class="btn btn-default-lg">Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+        integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+        crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script>
+    function initMap(){
+        var center = {lat: 60.053877, lng: 30.327794};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            scrollwheel: false,
+            zoom: 14,
+            center: center
+        });
+
+        var contentString = '<div id="content">' +
+                '<div id="siteNotice">' +
+                '</div>' +
+                '<h1 id="firstHeading" class="firstHeading">Ставръ Недвижимость</h1>' +
+                '<div id="bodyContent">' +
+                '<p><b>Наш адрес:</b><br/>' +
+                'Пр. Просвещения 15, оф 148 <br/>' +
+                'Санкт-Петербург, Россия</p>' +
+                '</div>' +
+                '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+            position: center,
+            map: map,
+            title: 'Ставръ Недвижимость'
+        });
+
+        marker.addListener('click', function (){
+            infowindow.open(map, marker);
+        });
+
+        var center2 = {lat: 59.871653, lng: 29.089810};
+
+        var map2 = new google.maps.Map(document.getElementById('map2'), {
+            scrollwheel: false,
+            zoom: 14,
+            center: center2
+        });
+        var marker2 = new google.maps.Marker({
+            position: center2,
+            map: map2,
+            title: 'Ломоносовский район, п.Сосновый Бор'
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOGvx2htEJzH9Rv6NtA_k-o5W9u_t7PUc&callback=initMap"></script>
+</body>
+</html>

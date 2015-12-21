@@ -81,6 +81,8 @@ hr {
     padding: 0; }
     .navbar-wrapper .navbar-toggle:focus {
       background-color: transparent; }
+  .navbar-wrapper .fa-bars {
+    padding: 15px 0; }
 
 @media (min-width: 768px) {
   .navbar-wrapper .container {
@@ -89,6 +91,19 @@ hr {
   .navbar-wrapper .navbar {
     padding-right: 0;
     padding-left: 0; } }
+.logo {
+  height: 100%; }
+
+.navbar-brand,
+.navbar-nav li a {
+  line-height: 75px;
+  height: 75px;
+  padding-top: 0;
+  font-size: 1.8rem; }
+
+.navbar-brand {
+  padding: 7px 15px; }
+
 /* INTRO
 -------------------------------------------------- */
 .intro {
@@ -215,6 +230,9 @@ hr {
 
 .slider-for *, .slider-nav * {
   margin: 0 auto; }
+
+.slick-slide:active, .slick-slide:focus {
+  outline: none !important; }
 
 .divider {
   margin: 80px 0; }

@@ -10,8 +10,8 @@
           integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
           crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
-    <link href="css/style.css" rel="stylesheet"/>
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href="css/style.min.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
     <!--[if lt IE 9]>
@@ -280,7 +280,7 @@
                 <span class="fa fa-envelope fa-4x"></span>
                 <address>
                     <p><strong>Почта:</strong><br/>
-                        info@stavrdom.com
+                        <a href="mailto:info@stavrdom.com">info@stavrdom.com</a>
                     </p>
                 </address>
             </li>
@@ -294,12 +294,12 @@
                 </address>
             </li>
             <li class="col-xs-6 col-sm-3">
-                <ul class="social-icons icon-circle icon-zoom list-inline">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://vk.com/stavrdom"><i class="fa fa-vk"></i></a></li>
-                    <li><a href="#"><i class="fa fa-odnoklassniki"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                </ul>
+                <span class="fa fa-vk fa-4x"></span>
+                <address>
+                    <p><strong>Наша группа:</strong><br/>
+                        <a href="https://vk.com/stavrdom">vk.com/stavrdom</a>
+                    </p>
+                </address>
             </li>
         </ul>
         <p class="col-xs-12 copyright">© <%= new Date().getFullYear() %> <%= title %></p>
@@ -334,108 +334,16 @@
     </div>
 </div>
 
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter34366350 = new Ya.Metrika({ id:34366350, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/34366350" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
         integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
         crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
-<script>
-    function initMap(){
-        var center = {lat: 60.053877, lng: 30.327794};
-        var map = new google.maps.Map(document.getElementById('map'), {
-            scrollwheel: false,
-            zoom: 14,
-            center: center
-        });
-
-        var contentString = '<div id="content">' +
-                '<div id="siteNotice">' +
-                '</div>' +
-                '<h1 id="firstHeading" class="firstHeading">Ставръ Недвижимость</h1>' +
-                '<div id="bodyContent">' +
-                '<p><b>Наш адрес:</b><br/>' +
-                'Пр. Просвещения 15, оф 148 <br/>' +
-                'Санкт-Петербург, Россия</p>' +
-                '</div>' +
-                '</div>';
-
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString
-        });
-
-        var marker = new google.maps.Marker({
-            position: center,
-            map: map,
-            title: 'Ставръ Недвижимость'
-        });
-
-        marker.addListener('click', function (){
-            infowindow.open(map, marker);
-        });
-
-        var center2 = {lat: 59.666643, lng: 30.116739};
-
-        var map2 = new google.maps.Map(document.getElementById('map2'), {
-            scrollwheel: false,
-            zoom: 14,
-            center: center2
-        });
-        var marker2 = new google.maps.Marker({
-            position: center2,
-            map: map2,
-            title: 'Ломоносовский район, п.Сосновый Бор'
-        });
-    }
-
-    $('.slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.slider-nav',
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                asNavFor: false
-            }
-        }]
-    });
-    $('.slider-nav').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        asNavFor: '.slider-for',
-        dots: true,
-        centerMode: true,
-        focusOnSelect: true,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false
-            }
-        }]
-    });
-    $('.responsive').slick({
-        dots: false,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        speed: 400,
-        slidesToShow: 8,
-        slidesToScroll: 1,
-        responsive: [{
-            breakpoint: 670,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                arrows: false
-            }
-        }]
-    });
-</script>
+<script src="js/main.min.js"></script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOGvx2htEJzH9Rv6NtA_k-o5W9u_t7PUc&callback=initMap"></script>
 </body>

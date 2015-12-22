@@ -361,6 +361,12 @@ hr {
   max-height: 682px;
 }
 
+@media (max-width: 768px) {
+  .slider-for img {
+    max-height: 290px;
+  }
+}
+
 .slider-nav img {
   max-height: 200px;
 }
@@ -413,6 +419,9 @@ footer {
   }
   span {
     margin-bottom: .5em;
+  }
+  a {
+    color: #f5f5f5;
   }
 }
 

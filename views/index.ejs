@@ -150,7 +150,7 @@
                 </div>
                 <% } %>
             </div>
-            <div class="slider-nav center">
+            <div class="slider-nav center hidden-xs">
                 <% for (var i = 1; i < 17 ; i++ ) { %>
                 <div>
                     <img src="img/house/<%= i %>.jpg" alt=""/>
@@ -394,17 +394,23 @@
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.slider-nav'
+        asNavFor: '.slider-nav',
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                asNavFor: false
+            }
+        }]
     });
     $('.slider-nav').slick({
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         asNavFor: '.slider-for',
         dots: true,
         centerMode: true,
         focusOnSelect: true,
         responsive: [{
-            breakpoint: 670,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,

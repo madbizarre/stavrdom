@@ -48,9 +48,14 @@
 </div>
 
 <header class="intro text-center white" id="intro" role="presentation">
-    <div class="container">
-        <h1 class="text-uppercase col-xs-12"><%= title %></h1>
-        <button class="btn btn-default-lg" role="button">Свяжитесь с нами!</button>
+    <div class="intro-wrapper">
+        <div class="container">
+            <h1 class="text-uppercase col-xs-12">Через 14 дней ты хозяин дома в 18 км от КАД</h1>
+            <button class="btn btn-default-lg" role="button" data-toggle="modal"
+                    data-target="#contactUsModal">Оставить заявку
+            </button>
+            <h2>Гатчинский район, п. Тайцы, садоводство Радуга</h2>
+        </div>
     </div>
 </header>
 
@@ -66,7 +71,7 @@
 
                     <div class="pricing__price">
                         <span class="pricing__anim">
-								23 000<span class="pricing__currency"><i class="fa fa-rub fa-1"></i></span>
+								2.6 млн <span class="pricing__currency"><i class="fa fa-rub fa-1"></i></span>
                         </span>
                     </div>
                 </div>
@@ -75,25 +80,25 @@
                         <li>
                             <ul class="list-inline">
                                 <li>Номер объекта</li>
-                                <li>9158</li>
+                                <li>7568</li>
                             </ul>
                         </li>
                         <li>
                             <ul class="list-inline">
                                 <li>Район</li>
-                                <li>Ломоносовский</li>
+                                <li>Гатчинский</li>
                             </ul>
                         </li>
                         <li>
                             <ul class="list-inline">
                                 <li>Размер участка, соток</li>
-                                <li>10</li>
+                                <li>6</li>
                             </ul>
                         </li>
                         <li>
                             <ul class="list-inline">
                                 <li>Общая площадь, м&#178;</li>
-                                <li>70</li>
+                                <li>60</li>
                             </ul>
                         </li>
                     </ul>
@@ -115,101 +120,77 @@
                         <li>
                             <ul class="list-inline">
                                 <li>Газ</li>
-                                <li>есть</li>
+                                <li>нет</li>
                             </ul>
                         </li>
                         <li>
                             <ul class="list-inline">
                                 <li>Водоем</li>
-                                <li>есть</li>
+                                <li>нет</li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </div>
+            <button class="btn btn-default-lg" role="button" data-toggle="modal"
+                    data-target="#contactUsModal">Оставить заявку
+            </button>
         </div>
     </section>
 
-    <section class="container" id="photo">
-        <h1 class="text-uppercase text-center">Фото</h1>
-        <hr class="subtitle-divider"/>
+    <section class="gray" id="photo">
+        <div class="container">
+            <h1 class="text-uppercase text-center">Фото</h1>
+            <hr class="subtitle-divider"/>
 
-        <div class="slider-for">
-            <div>
-                <img src="https://unsplash.it/800/400?image=0" alt=""/>
+            <div class="slider-for">
+                <% for (var i = 1; i < 17 ; i++ ) { %>
+                <div>
+                    <img src="img/house/<%= i %>.jpg" alt=""/>
+                </div>
+                <% } %>
             </div>
-            <div>
-                <img src="https://unsplash.it/800/400?image=10" alt=""/>
-            </div>
-            <div>
-                <img src="https://unsplash.it/800/400?image=20" alt=""/>
-            </div>
-            <div>
-                <img src="https://unsplash.it/800/400?image=30" alt=""/>
-            </div>
-            <div>
-                <img src="https://unsplash.it/800/400?image=40" alt=""/>
-            </div>
-            <div>
-                <img src="https://unsplash.it/800/400?image=50" alt=""/>
-            </div>
-            <div>
-                <img src="https://unsplash.it/800/400?image=60" alt=""/>
-            </div>
-        </div>
-        <div class="slider-nav center">
-            <div>
-                <img src="https://unsplash.it/200/100?image=0" alt=""/>
-            </div>
-            <div>
-                <img src="https://unsplash.it/200/100?image=10" alt=""/>
-            </div>
-            <div>
-                <img src="https://unsplash.it/200/100?image=20" alt=""/>
-            </div>
-            <div>
-                <img src="https://unsplash.it/200/100?image=30" alt=""/>
-            </div>
-            <div>
-                <img src="https://unsplash.it/200/100?image=40" alt=""/>
-            </div>
-            <div>
-                <img src="https://unsplash.it/200/100?image=50" alt=""/>
-            </div>
-            <div>
-                <img src="https://unsplash.it/200/100?image=60" alt=""/>
+            <div class="slider-nav center">
+                <% for (var i = 1; i < 17 ; i++ ) { %>
+                <div>
+                    <img src="img/house/<%= i %>.jpg" alt=""/>
+                </div>
+                <% } %>
             </div>
         </div>
     </section>
 
     <section class="white" id="description">
-        <div class="container">
-            <h1 class="text-uppercase text-center">Описание</h1>
+        <div class="container text-center">
+            <h1 class="text-uppercase">Описание</h1>
             <hr class="subtitle-divider"/>
-            <p>
-
-            <h2 class="text-center">Снт "Балтика" д.Ракопежи</h2>
-            Великолепный, уютный дом из бруса, на блочном фундаменте, на участке 10 соток. Участок находится на
-            тупиковой улице.<br/>
-            Спокойное место идеально подходит для отдыха и восстановления жизненных сил. Поблизости находится
-            отличное чистое озеро!<br/>
-            На участке вода (летний водопровод), электричество (15 квт), газ(балон), парник (помидоры ,огруцы)<br/>
-            Также на участке есть баня с просторной комнатой отдыха, дровник, сарай, гараж.<br/>
-            Состояние объекта отличное - приехал и живи наслаждайся!<br/>
+            <p class="text-left">
+                Дом с верандой и балкончиком, бревенчатый, утеплен, обшит сайдингом 2 этажа, 60 кв. метров. <br/>
+                Участок - 6 соток, ровный, сухой, огорожен, дорожки выложены плиткой, выполнена дренажная система. <br/>
+                На участке: теплица 6Х3 м, хоз.блок с туалетом, баня из бревна(внутри комната отдыха, пол с подогревом,
+                мыльная, хорошая парная). Вода-скважина (заведена в баню), установлен бойлер. Электричество в доме и
+                бане.
+                Рядом с банькой беседка, шашлычница. Все для полноценного отдыха! Продается с мебелью, техникой,
+                инвентарем!
+                Удобный круглогодичный подъезд к участку, хорошие приветливые соседи. Документы готовы к продаже.<br/>
+                100% юридическая и финансовая защита сделки.<br/>
             </p>
+            <button class="btn btn-default-lg" role="button" data-toggle="modal"
+                    data-target="#contactUsModal">Оставить заявку
+            </button>
         </div>
     </section>
 
-    <section class="container" id="route">
-
-        <h1 class="text-uppercase text-center">Как добраться</h1>
-        <hr class="subtitle-divider"/>
-        <h2>Здесь описание как добраться</h2>
-        <section class="map gray">
-            <div class="col-xs-12" style="height: 100%">
-                <div id="map2" style="width: 100%; height: 100%;"></div>
-            </div>
-        </section>
+    <section class="gray" id="route">
+        <div class="container">
+            <h1 class="text-uppercase text-center">Объект на карте</h1>
+            <hr class="subtitle-divider"/>
+            <section class="map">
+                <div class="col-xs-12" style="height: 100%">
+                    <div id="map2" style="width: 100%; height: 100%;"></div>
+                </div>
+            </section>
+        </div>
     </section>
 
     <section class="white" id="about">
@@ -249,6 +230,7 @@
             </ul>
 
             <h2 class="text-center text-capitalize">Наши партнеры</h2>
+
             <div class="responsive">
                 <div>
                     <img src="http://stavrdom.com/sites/default/files/sberbank_0.jpg" alt=""/>
@@ -290,7 +272,7 @@
                 <span class="fa fa-phone fa-4x"></span>
                 <address>
                     <p><strong>Телефон:</strong><br/>
-                        +7 (812) 947-23-60
+                        +7 (812) 711-10-10
                     </p>
                 </address>
             </li>
@@ -298,7 +280,7 @@
                 <span class="fa fa-envelope fa-4x"></span>
                 <address>
                     <p><strong>Почта:</strong><br/>
-                        example@gmail.com
+                        info@stavrdom.com
                     </p>
                 </address>
             </li>
@@ -314,7 +296,7 @@
             <li class="col-xs-6 col-sm-3">
                 <ul class="social-icons icon-circle icon-zoom list-inline">
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                    <li><a href="https://vk.com/stavrdom"><i class="fa fa-vk"></i></a></li>
                     <li><a href="#"><i class="fa fa-odnoklassniki"></i></a></li>
                     <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                 </ul>
@@ -324,7 +306,7 @@
     </div>
 </footer>
 
-<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModal">
+<div class="modal fade" id="contactUsModal" tabindex="-1" role="dialog" aria-labelledby="contactUsModal">
     <div class="modal-dialog">
         <div class="modal-content contact">
             <div class="modal-header">
@@ -339,17 +321,9 @@
                         <input type="text" id="inputName" placeholder="Имя*" tabindex="1" autofocus required/>
                     </fieldset>
                     <fieldset>
-                        <label for="inputEmail"></label>
-                        <input type="email" id="inputEmail" placeholder="Email" tabindex="2"/>
-                    </fieldset>
-                    <fieldset>
                         <label for="inputTel"></label>
                         <input type="tel" id="inputTel" placeholder="Телефон*" tabindex="4"
                                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required/>
-                    </fieldset>
-                    <fieldset>
-                        <label for="inputComment"></label>
-                        <textarea id="inputComment" placeholder="Сообщение*" tabindex="5" required></textarea>
                     </fieldset>
                     <button type="submit" id="inputSubmit" data-loading-text="Отправляется"
                             class="btn btn-default-lg">Отправить
@@ -401,7 +375,7 @@
             infowindow.open(map, marker);
         });
 
-        var center2 = {lat: 59.871653, lng: 29.089810};
+        var center2 = {lat: 59.666643, lng: 30.116739};
 
         var map2 = new google.maps.Map(document.getElementById('map2'), {
             scrollwheel: false,

@@ -177,6 +177,7 @@ hr {
     padding: 15px 0;
   }
 }
+
 @media (min-width: 768px) {
   .navbar-wrapper {
     .container {
@@ -222,6 +223,16 @@ hr {
     padding-top: 25vh;
     text-shadow: 2px 2px 10px black, 0 0 5rem black;
     z-index: 99;
+  }
+  h2 {
+    padding-top: 25vh;
+  }
+  .intro-wrapper {
+    width: 100%;
+    height: 75vh;
+    min-height: 100%;
+    text-shadow: 2px 2px 10px black, 0 0 5rem black;
+    background-color: rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -332,14 +343,21 @@ hr {
   line-height: 2em;
 }
 
-
-.slider-for {
+.slider-for, .slider-nav {
   img {
     -o-object-fit: cover;
     -webkit-object-fit: cover;
     object-fit: cover;
-    width: 100%;
+    max-width: 100%;
   }
+}
+
+.slider-for img {
+  max-height: 682px;
+}
+
+.slider-nav img {
+  max-height: 200px;
 }
 
 .slider-for, .slider-nav {
@@ -443,7 +461,6 @@ footer {
     background-color: #C52F30;
   }
 }
-
 
 /* CONTACT MODAL
 -------------------------------------------------- */

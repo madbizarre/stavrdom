@@ -260,9 +260,33 @@
         </div>
     </section>
 
-    <section class="map gray" id="map-section">
-        <div id="map" style="width: 100%; height: 100%;"></div>
+    <section class="gray" id="map-section">
+        <div>
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs container" role="tablist">
+                <li role="presentation" class="active"><a href="#map-spacer-1" aria-controls="map-spacer-1" role="tab" data-toggle="tab">М. Проспект Просвещения</a></li>
+                <li role="presentation"><a href="#map-spacer-2" aria-controls="map-spacer-2" role="tab" data-toggle="tab">М. Звездная</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="map-spacer-1">
+                    <section class="map gray" id="map-section">
+                        <div id="map-office-1" style="width: 100%; height: 100%;"></div>
+                    </section>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="map-spacer-2">
+                    <section class="map gray">
+                        <div id="map-office-2" style="width: 100%; height: 100%;"></div>
+                    </section>
+                </div>
+            </div>
+
+        </div>
     </section>
+
+
 </main>
 
 <footer>
@@ -272,7 +296,8 @@
                 <span class="fa fa-phone fa-4x"></span>
                 <address>
                     <p><strong>Телефон:</strong><br/>
-                        +7 (812) 711-10-10
+                        +7 (812) 711-10-10<br/>
+                        +7 (921) 945-13-83
                     </p>
                 </address>
             </li>

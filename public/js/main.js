@@ -1,7 +1,7 @@
-;(function(){
+;(function (){
     window.initMap = function (){
         var center = {lat: 60.053877, lng: 30.327794};
-        var map = new google.maps.Map(document.getElementById('map'), {
+        var map = new google.maps.Map(document.getElementById('map-office-1'), {
             scrollwheel: false,
             zoom: 14,
             center: center
@@ -32,6 +32,44 @@
             infowindow.open(map, marker);
         });
 
+        var center3 = {lat: 59.842204, lng: 30.350105};
+        var map3 = new google.maps.Map(document.getElementById('map-office-2'), {
+            scrollwheel: false,
+            zoom: 14,
+            center: center3
+        });
+
+        var contentString3 = '<div id="content">' +
+            '<div id="siteNotice">' +
+            '</div>' +
+            '<h1 id="firstHeading" class="firstHeading">Ставръ Недвижимость</h1>' +
+            '<div id="bodyContent">' +
+            '<p><b>Наш адрес:</b><br/>' +
+            'Ул. Пулковская 2/1 <br/>' +
+            'Санкт-Петербург, Россия</p>' +
+            '</div>' +
+            '</div>';
+
+        var infowindow3 = new google.maps.InfoWindow({
+            content: contentString3
+        });
+
+        var marker3 = new google.maps.Marker({
+            position: center3,
+            map: map3,
+            title: 'Ставръ Недвижимость'
+        });
+
+        marker3.addListener('click', function (){
+            infowindow3.open(map3, marker3);
+        });
+        $(function (){
+            $("a[href='#map-spacer-2']").on('shown.bs.tab', function (){
+                lastCenter = map3.getCenter();
+                google.maps.event.trigger(map3, 'resize');
+                map3.setCenter(lastCenter);
+            });
+        })();
         var center2 = {lat: 59.666643, lng: 30.116739};
 
         var map2 = new google.maps.Map(document.getElementById('map2'), {
@@ -93,7 +131,7 @@
         }]
     });
 
-    $(document).ready(function(){
+    $(document).ready(function (){
         var $btnSubmit = $('button[type=submit]'),
             $contact = $('#contact'),
             $contactTitle = $('.contact-title'),
@@ -106,7 +144,10 @@
                 }
             },
             ajaxSuccess = function (data){
-                try{yaCounter34366350.reachGoal('sendData');}catch(e){}
+                try {
+                    yaCounter34366350.reachGoal('sendData');
+                } catch (e) {
+                }
                 $btnSubmit.button('reset');
                 closeAlert();
                 $contactTitle.html('Спасибо, заявка отправлена');

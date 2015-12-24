@@ -267,6 +267,9 @@ hr {
   height: 400px;
   width: 100%; }
 
+#map-section {
+  padding: 50px 0 0; }
+
 /* FOOTER
 -------------------------------------------------- */
 footer {
@@ -290,42 +293,45 @@ footer {
 .copyright {
   color: #a5a5a5; }
 
-.social-icons .fa {
-  font-size: 1.8em; }
-.social-icons .fa {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  color: #FFF;
-  color: rgba(255, 255, 255, 0.8);
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-.social-icons.icon-circle .fa {
-  border-radius: 50%; }
-.social-icons .fa:hover, .social-icons .fa:active {
-  color: #FFF;
-  -webkit-box-shadow: 1px 1px 3px #333;
-  -moz-box-shadow: 1px 1px 3px #333;
-  box-shadow: 1px 1px 3px #333; }
-.social-icons.icon-zoom .fa:hover, .social-icons.icon-zoom .fa:active {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1); }
-.social-icons .fa-facebook {
-  background-color: #3C599F; }
-.social-icons .fa-vk {
-  background-color: #375474; }
-.social-icons .fa-odnoklassniki {
-  background-color: #ed812b; }
-.social-icons .fa-youtube, .social-icons .fa-youtube-play, .social-icons .fa-youtube-square {
-  background-color: #C52F30; }
+.social-icons {
+  margin: 3em auto; }
+  .social-icons .fa {
+    font-size: 1.8em; }
+  .social-icons .fa {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFF;
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  .social-icons.icon-circle .fa {
+    border-radius: 50%; }
+  .social-icons .fa:hover, .social-icons .fa:active {
+    color: #FFF;
+    -webkit-box-shadow: 1px 1px 3px #333;
+    -moz-box-shadow: 1px 1px 3px #333;
+    box-shadow: 1px 1px 3px #333; }
+  .social-icons.icon-zoom .fa:hover, .social-icons.icon-zoom .fa:active {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1); }
+  .social-icons .fa-facebook {
+    background-color: #3C599F; }
+  .social-icons .fa-vk {
+    background-color: #375474; }
+  .social-icons .fa-instagram {
+    background-color: #A1755C; }
 
+@media (max-width: 767px) {
+  .social-icons {
+    margin: 1.5em auto; } }
 /* CONTACT MODAL
 -------------------------------------------------- */
 .contact {

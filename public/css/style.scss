@@ -398,6 +398,10 @@ hr {
   width: 100%;
 }
 
+#map-section {
+  padding: 50px 0 0;
+}
+
 /* FOOTER
 -------------------------------------------------- */
 
@@ -430,6 +434,7 @@ footer {
 }
 
 .social-icons {
+  margin: 3em auto;
   .fa {
     font-size: 1.8em;
   }
@@ -468,11 +473,14 @@ footer {
   .fa-vk {
     background-color: #375474;
   }
-  .fa-odnoklassniki {
-    background-color: #ed812b;
+  .fa-instagram {
+    background-color: #A1755C;
   }
-  .fa-youtube, .fa-youtube-play, .fa-youtube-square {
-    background-color: #C52F30;
+}
+
+@media (max-width: 767px) {
+  .social-icons {
+    margin: 1.5em auto;
   }
 }
 

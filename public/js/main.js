@@ -63,13 +63,12 @@
         marker3.addListener('click', function (){
             infowindow3.open(map3, marker3);
         });
-        $(function (){
+
             $("a[href='#map-spacer-2']").on('shown.bs.tab', function (){
                 lastCenter = map3.getCenter();
                 google.maps.event.trigger(map3, 'resize');
                 map3.setCenter(lastCenter);
             });
-        })();
         var center2 = {lat: 59.666643, lng: 30.116739};
 
         var map2 = new google.maps.Map(document.getElementById('map2'), {
